@@ -1,0 +1,15 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin background-gradient-clip {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
